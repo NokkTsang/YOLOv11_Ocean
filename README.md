@@ -7,10 +7,10 @@ This repository provides a comprehensive benchmark of multiple object detection 
 This project evaluates the performance of various state-of-the-art object detection models on marine life detection tasks.
 
 ### Model List
-- **YOLOv8n** - YOLOv8 Nano version
-- **YOLOv8s** - YOLOv8 Small version
-- **YOLOv10** - Latest YOLOv10 model
-- **YOLOv11n** - YOLOv11 Nano version (Baseline)
+- **YOLOv8n** - YOLOv8 Nano
+- **YOLOv8s** - YOLOv8 Small
+- **YOLOv10** - YOLOv10
+- ~~**YOLOv11n** - YOLOv11 Nano~~
 - **RT-DETR** - Real-Time Detection Transformer
 - **Faster R-CNN** - Classic two-stage detector
 
@@ -36,7 +36,6 @@ This project evaluates the performance of various state-of-the-art object detect
 | YOLOv8n | - | - | - | - | [config](configs/yolov8n.yaml) |
 | YOLOv8s | - | - | - | - | [config](configs/yolov8s.yaml) |
 | YOLOv10 | - | - | - | - | [config](configs/yolov10.yaml) |
-| YOLOv11n | - | - | - | - | [config](configs/yolov11n.yaml) |
 | RT-DETR | - | - | - | - | [config](configs/rtdetr.yaml) |
 | Faster R-CNN | - | - | - | - | [config](configs/faster_rcnn.yaml) |
 
@@ -44,12 +43,11 @@ This project evaluates the performance of various state-of-the-art object detect
 
 | Model | FPS | Params (M) | GFLOPs | Input Size |
 |-------|-----|------------|--------|------------|
-| YOLOv8n | - | - | - | 640×640 |
-| YOLOv8s | - | - | - | 640×640 |
-| YOLOv10 | - | - | - | 640×640 |
-| YOLOv11n | - | - | - | 640×640 |
-| RT-DETR | - | - | - | 640×640 |
-| Faster R-CNN | - | - | - | 640×640 |
+| YOLOv8n | - | - | - | - |
+| YOLOv8s | - | - | - | - |
+| YOLOv10 | - | - | - | - |
+| RT-DETR | - | - | - | - |
+| Faster R-CNN | - | - | - | - |
 
 *Note: FPS tested on [GPU Model] + [CUDA Version]*
 
@@ -70,7 +68,6 @@ YOLOv11_Ocean/
 │   ├── yolov8n.yaml
 │   ├── yolov8s.yaml
 │   ├── yolov10.yaml
-│   ├── yolov11n.yaml
 │   ├── rtdetr.yaml
 │   └── faster_rcnn.yaml
 │
@@ -78,7 +75,6 @@ YOLOv11_Ocean/
 │   ├── yolov8n.pt
 │   ├── yolov8s.pt
 │   ├── yolov10.pt
-│   ├── yolov11n.pt
 │   ├── rtdetr.pt
 │   └── faster_rcnn.pth
 │
@@ -86,7 +82,6 @@ YOLOv11_Ocean/
 │   ├── train_yolov8n.py
 │   ├── train_yolov8s.py
 │   ├── train_yolov10.py
-│   ├── train_yolov11n.py
 │   ├── train_rtdetr.py
 │   ├── train_faster_rcnn.py
 │   └── evaluate.py
@@ -125,6 +120,7 @@ numpy
 opencv-python
 matplotlib
 tensorboard
+...
 ```
 
 ## Experimental Setup

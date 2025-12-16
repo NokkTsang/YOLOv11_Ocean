@@ -1,0 +1,28 @@
+# Core dependencies
+torch>=2.0.0
+torchvision>=0.15.0
+ultralytics>=8.0.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+pillow>=10.0.0
+pyyaml>=6.0
+
+# MMDetection (for Faster R-CNN)
+mmcv>=2.0.0
+mmdet>=3.0.0
+mmengine>=0.7.0
+
+# Training and evaluation
+tensorboard>=2.13.0
+scipy>=1.10.0
+tqdm>=4.65.0
+pandas>=2.0.0
+
+# Visualization
+seaborn>=0.12.0
+plotly>=5.14.0
+
+# Utils
+pyyaml>=6.0
+requests>=2.31.0
